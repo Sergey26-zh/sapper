@@ -1,11 +1,18 @@
 package com.example.sapper.model.dto;
 
-import java.util.UUID;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
+import java.util.List;
+
+@Getter
+@Setter
+@AllArgsConstructor
 public class GameDto {
     private int width;
     private int height;
     private int minesCount;
     private boolean completed;
-    private String[][] field;
+    private List<CellDto> cells;
 }
