@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
+
+    <changeSet id="2" author="ivakhnenko">
+        <createTable tableName="cell">
+            <column name="id" type="UUID">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="game_id" type="UUID">
+                <constraints nullable="false"/>
+            </column>
+            <column name="row" type="INT"/>
+            <column name="col" type="INT"/>
+            <column name="is_mine" type="BOOLEAN"/>
+            <column name="is_revealed" type="BOOLEAN"/>
+            <column name="adjacent_mines" type="INT"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

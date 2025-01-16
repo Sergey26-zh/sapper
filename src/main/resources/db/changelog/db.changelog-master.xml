@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
+
+    <include file="changeset/V001__game.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/V002__cell.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/V003__turn.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/V004__fk_cell_game.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/V005_fk_turn_game.xml" relativeToChangelogFile="true"/>
+</databaseChangeLog>
