@@ -1,6 +1,6 @@
 package com.example.sapper.repository;
 
-import com.example.sapper.model.entity.Turn;
+import com.example.sapper.entity.Turn;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

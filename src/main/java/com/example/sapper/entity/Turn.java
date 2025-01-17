@@ -1,4 +1,4 @@
-package com.example.sapper.model.entity;
+package com.example.sapper.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

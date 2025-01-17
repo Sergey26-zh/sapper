@@ -1,6 +1,6 @@
 package com.example.sapper.repository;
 
-import com.example.sapper.model.entity.Game;
+import com.example.sapper.entity.Game;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
