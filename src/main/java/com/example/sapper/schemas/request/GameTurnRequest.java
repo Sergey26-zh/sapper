@@ -6,7 +6,7 @@ import java.util.UUID;
 
 @Data
 public class GameTurnRequest {
-    private UUID game_id;
+    private UUID gameId;
     private int col;
     private int row;
 }

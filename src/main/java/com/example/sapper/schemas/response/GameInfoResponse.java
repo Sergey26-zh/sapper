@@ -7,10 +7,10 @@ import java.util.UUID;
 
 @Data
 public class GameInfoResponse {
-    private UUID game_id;
+    private UUID gameId;
     private int width;
     private int height;
-    private int mines_count;
+    private int minesCount;
     private boolean completed;
     private List<List<String>> field;
 }
