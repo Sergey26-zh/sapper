@@ -10,5 +10,4 @@ import java.util.UUID;
 
 @Repository
 public interface CellRepository extends JpaRepository<Cell, UUID> {
-    Optional<Cell> findByGameAndRowAndCol(Game game, int row, int col);
 }

@@ -20,8 +20,10 @@ public class Cell {
     @JoinColumn(name = "game_id", nullable = false)
     private Game game;
     private int row;
+
+    @Column(nullable = false)
     private int col;
-    private boolean isMine;
-    private boolean isRevealed;
-    private int adjacentMines;
+
+    @Column(nullable = false, length = 2)
+    private String value;
 }
