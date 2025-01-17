@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.util.UUID;
 
+/**
+ * Данные о ходе игрока
+ */
 @Data
 public class GameTurnRequest {
     private UUID gameId;

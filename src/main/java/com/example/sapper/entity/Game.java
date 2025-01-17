@@ -12,10 +12,8 @@ import java.util.UUID;
 @Setter
 @Table(name = "game")
 public class Game {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", columnDefinition = "UUID", updatable = false, nullable = false)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @Column(name = "width", nullable = false)
@@ -30,6 +28,6 @@ public class Game {
     @Column(name = "completed", nullable = false)
     private boolean completed;
 
-    @OneToMany(mappedBy = "game", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "game", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Cell> cells;
 }

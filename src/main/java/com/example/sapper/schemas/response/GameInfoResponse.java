@@ -5,6 +5,9 @@ import lombok.Data;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * Информация об игре
+ */
 @Data
 public class GameInfoResponse {
     private UUID gameId;
